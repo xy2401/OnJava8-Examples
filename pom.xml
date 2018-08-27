@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xy2401.annotation.book</groupId>
+	<artifactId>OnJava8-Examples</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>thinking in java</name>
+	<description>thinking in java Java编程思想 代码注解 </description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>26.0-jre</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core -->
+		<dependency>
+			<groupId>org.openjdk.jmh</groupId>
+			<artifactId>jmh-core</artifactId>
+			<version>1.21</version>
+		</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/nu.xom/com.springsource.nu.xom -->
+		<!-- use @ serialization/APerson.java serialization/People.java -->
+		<dependency>
+			<groupId>nu.xom</groupId>
+			<artifactId>com.springsource.nu.xom</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<!-- for 'nu.xom:com.springsource.nu.xom:jar:1.2.5' -->
+	<repositories>
+		<repository>
+			<id>spring-libs-milestone</id>
+			<name>Spring libs-milestone</name>
+			<url>http://repo.spring.io/libs-milestone/</url>
+		</repository>
+
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/main/annotations</source>
+								<source>src/main/arrays</source>
+								<source>src/main/collections</source>
+								<source>src/main/collectiontopics</source>
+								<source>src/main/compression</source>
+								<source>src/main/concurrent</source>
+								<source>src/main/control</source>
+								<source>src/main/enums</source>
+								<source>src/main/equalshashcode</source>
+								<source>src/main/exceptions</source>
+								<source>src/main/files</source>
+								<source>src/main/functional</source>
+								<source>src/main/generics</source>
+								<source>src/main/hiding</source>
+								<source>src/main/housekeeping</source>
+								<source>src/main/innerclasses</source>
+								<source>src/main/interfaces</source>
+								<source>src/main/iostreams</source>
+								<source>src/main/javadoc</source>
+								<source>src/main/lowlevel</source>
+								<source>src/main/newio</source>
+								<source>src/main/objects</source>
+								<source>src/main/operators</source>
+								<source>src/main/patterns</source>
+								<source>src/main/polymorphism</source>
+								<source>src/main/references</source>
+								<source>src/main/resources</source>
+								<source>src/main/reuse</source>
+								<source>src/main/serialization</source>
+								<source>src/main/standardio</source>
+								<source>src/main/streams</source>
+								<source>src/main/strings</source>
+								<source>src/main/typeinfo</source>
+								<source>src/main/validating</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+
+
+	</build>
+
+
+</project>

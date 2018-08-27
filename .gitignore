@@ -109,3 +109,9 @@ buildSrc/
 /threads/primes.txt
 _*
 config.py
+
+# Eclipse project files
+/.settings/
+.classpath
+.project
+/target/
