@@ -3,7 +3,7 @@
 Code Examples for the book "On Java 8"   forked from BruceEckel/OnJava8-Examples  
  
 
- 
+
  
   -  第1章 [对象导论 Introduction to Objects](note/Introduction_to_Objects.md)  
   
@@ -49,6 +49,13 @@ Code Examples for the book "On Java 8"   forked from BruceEckel/OnJava8-Examples
   
   -  第22章 [图形化用户界面  Graphical User Interfaces](note/Graphical_User_Interfaces.md)  
   
-  
 
+# reference  
+
+- [BruceEckel/OnJava8-Examples: Code Examples for the book "On Java 8"](https://github.com/BruceEckel/OnJava8-Examples)
+- [BruceEckel/TIJ4-code: Example code for the book "Thinking in Java, 4th Edition"](https://github.com/BruceEckel/TIJ4-code)
+  
+- [Thinking in Java 4th Edition - Solutions to Exercises](http://greggordon.org/java/tij4/solutions.htm)
+- [gauravojha/tij4-maven: Thinking in Java 4th Edition Souce Code - Maven project](https://github.com/gauravojha/tij4-maven)
+ 
 
